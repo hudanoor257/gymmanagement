@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym and fitness</title> 
+</head>
+<style> 
+body{
+    background: url(../static/gymimg.jpeg);
+    background-repeat: no-repeat;
+    background-size: 1366px 641px;
+    margin: 0px;
+    padding:0px;
+    color: azure;
+    font-family: "Akaya Kanadaka", system-ui;
+}
+.left{
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 20px;
+}
+.left img{ 
+    width: 80px;
+}
+.mid{
+    display: block;
+    width: 30%;
+    margin: 20px auto;
+}
+.nav{
+    display: inline;   
+}
+.nav li{ 
+    display: inline;
+}
+.left div{
+    text-align: center;
+    margin: -15px;
+}
+.nav li a{
+    color: azure;
+    text-decoration: none;
+    padding: 25px 15px;
+    font-size: 20px; 
+}
+.nav li a:hover , .nav li a:active{
+    text-decoration: underline;
+    color: rgba(43, 30, 30, 0.719);    
+}
+.right{
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 20px;
+}
+.btn{
+    margin: 0px 10px;
+    padding: 3px 8px;
+    color: rgb(12, 12, 12);
+    background-color: rgb(187, 182, 176);
+    border: 2px solid rgb(58, 61, 61);
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Akaya Kanadaka", system-ui;;
+}
+.btn:hover{background-color: rgba(78, 74, 74, 0.377);}
+.plan_a{
+    border: 2px solid #0c0837;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 102px;
+    left: 102px;
+    width: 209px;
+    margin: 20px;
+    background: #273c4f63;
+    bottom: 72px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.plan_b{
+    border: 2px solid  #0c0837;
+    text-align: center;
+    display: block;
+    position: absolute;
+    top: 102px;
+    right: 500px;
+    left: 500px;
+    bottom: 72px;
+    width: 209px;
+    margin: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #273c4f63;
+}
+.plan_c{
+    border: 2px solid #0c0837;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    top: 102px;
+    right: 102px;
+    width: 209px;
+    margin: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #273c4f63;
+    bottom: 72px;
+}
+</style>
+<body>
+    <header class="header">
+
+        <!-- left box -->
+    <div class="left">
+     <img src="../static/logo2.png">
+     <div>F&G</div>
+    </div>
+    
+      <!-- mid box -->
+      <div class="mid">
+        <ul class="nav">
+            <li><a href="{{'home'}}">Home &nbsp;</a></li>
+            <li><a href="{{'membership'}}">Membership&nbsp;</a></li>
+            <li><a href="{{'about'}}"> About Us&nbsp;</a></li>
+        </ul>
+    </div>
+    
+        <!-- right box -->
+    <div class="right">
+     <button class="btn">Call us</button><button class="btn">Email</button>
+    </div>
+    </header>
+
+    <div class="container">
+        <!-- basic -->
+     <div class="plan_a">
+       <h1>Basic <br> Plan</h1>
+       <ul>
+        <li>Price: $15/month</li>
+       <b>Features:</b>
+       </ul>
+      <ul>
+       <li>Access to gym equipment during off-peak hours</li> 
+       <li>1 group class per month</li>
+       <li>No personal trainer access</li>
+       <li>Locker room access</li>
+      </ul>
+     </div>
+      <!-- standard -->
+     <div class="plan_b">
+      <h1>Standard Plan</h1>
+      <ul>
+        <li>Price: $35/month</li>
+       <b>Features:</b>
+      </ul>
+      <ul>
+       <li>Access to gym equipment anytime</li> 
+       <li>4 group classes per month</li>
+       <li>Limited personal trainer consultations (1 session/month)</li>
+       <li>Locker room access</li>
+      </ul>
+     </div>
+      <!-- premium -->
+     <div class="plan_c">
+      <h1>Premium Plan</h1>
+      <ul>
+        <li>Price: $65/month</li>
+        <b>Features:</b>
+      </ul>
+      <ul>
+       <li>24/7 access to gym facilities</li> 
+       <li>Unlimited group classes</li>
+       <li>Personalized fitness and diet plan</li>
+       <li>Dedicated personal trainer (4 sessions/month)</li>
+       <li>Locker room access</li>
+      </ul>
+     </div>
+     </ol>
+    </div>
+</body>
+</html>
