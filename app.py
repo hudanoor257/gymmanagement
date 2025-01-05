@@ -2,10 +2,6 @@ from flask import Flask ,render_template,make_response
 
 app=Flask(__name__)
 
-@app.route('/')
-def index():
-    return render_template('index.html')
-
 @app.route('/home')
 def home():
     return render_template('index.html')
@@ -17,7 +13,6 @@ def about():
 @app.route('/membership')
 def membship():
     return render_template('membership.html')
-
 
 if __name__ == '__main__':
     app.run(debug=True)
