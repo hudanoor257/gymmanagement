@@ -2,6 +2,10 @@ from flask import Flask ,render_template,make_response
 
 app=Flask(__name__)
 
+@app.route('/')
+def defaul():
+    return render_template('index.html')
+
 @app.route('/home')
 def home():
     return render_template('index.html')
